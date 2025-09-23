@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Navigate } from 'react-router-dom'; // Import Navigate from React Router v6
-import '../css/ExploreCollections.css'; // Import the CSS file
+import { Navigate } from 'react-router-dom'; 
+import '../css/ExploreCollections.css'; 
 
 class ExploreCollections extends Component {
   constructor(props) {
@@ -14,20 +14,20 @@ class ExploreCollections extends Component {
         { id: 5, title: 'CARTOONS', imageUrl: '../images/cc1.jpg', link: 'cartoons' },
         { id: 6, title: 'CLASSNTRADE', imageUrl: '../images/cnn1.jpg', link: '/cn' },
       ],
-      redirectHome: false, // State to handle redirection
+      redirectHome: false, 
     };
   }
 
   handleRedirect = (path) => {
-    window.location.href = path; // Redirects to the specific page
+    window.location.href = path; 
   };
 
   handleNavigateHome = () => {
-    this.setState({ redirectHome: true }); // Trigger redirect
+    this.setState({ redirectHome: true }); 
   };
 
   render() {
-    // Redirect to homepage if button is clicked
+    
     if (this.state.redirectHome) {
       return <Navigate to="/homepage" />;
     }

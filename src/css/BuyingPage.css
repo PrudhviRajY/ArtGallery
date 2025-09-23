@@ -46,24 +46,24 @@
     width: 100%;
     padding: 10px;
     margin: 8px 0;
-    border: 1px solid #555; /* Darker border */
+    border: 1px solid #555; 
     border-radius: 5px;
-    background-color: #f8f6f6; /* White input */
-    color: #222; /* Dark text */
+    background-color: #f8f6f6; 
+    color: #222; 
 }
 
-/* Order Summary */
+
 .order-summary {
     flex: 1;
     padding: 20px;
     border: 1px solid #999;
     border-radius: 10px;
-    background-color: #f5f2f2; /* Soft white */
+    background-color: #f5f2f2; 
 }
 
 .order-summary h2 {
     margin-bottom: 15px;
-    color: #222; /* Darker text */
+    color: #222; 
 }
 
 .order-item {
@@ -77,20 +77,20 @@
     height: 80px;
     border-radius: 8px;
     margin-right: 15px;
-    border: 2px solid #ccc; /* Adds contrast */
+    border: 2px solid #ccc; 
 }
 
 .price {
     font-size: 18px;
     font-weight: bold;
-    color: #d32f2f; /* Red for price visibility */
+    color: #d32f2f; 
 }
 
-/* Purchase Button */
+
 .purchase-button {
     width: 100%;
     padding: 12px;
-    background-color: #007bff; /* Bright Blue */
+    background-color: #007bff; 
     color: rgb(167, 84, 84);
     border: none;
     font-size: 18px;
@@ -102,7 +102,7 @@
 }
 
 .purchase-button:hover {
-    background-color: #0056b3; /* Darker blue */
+    background-color: #0056b3;
 }
 .captcha-section {
   text-align: center;

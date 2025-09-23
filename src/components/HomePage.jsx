@@ -16,7 +16,7 @@ export class HomePage extends Component {
   toggleAuctionsDropdown = () => {
     this.setState((prevState) => ({
       showAuctionsDropdown: !prevState.showAuctionsDropdown,
-      showArtworksDropdown: false, // Close other dropdown
+      showArtworksDropdown: false, 
     }));
   };
   handleSignout = () => {
@@ -28,7 +28,7 @@ export class HomePage extends Component {
   toggleArtworksDropdown = () => {
     this.setState((prevState) => ({
       showArtworksDropdown: !prevState.showArtworksDropdown,
-      showAuctionsDropdown: false, // Close other dropdown
+      showAuctionsDropdown: false, 
     }));
   };
 

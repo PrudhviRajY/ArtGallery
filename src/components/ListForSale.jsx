@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
+import { useNavigate } from "react-router-dom"; 
 import "../css/ListForSale.css";
 
 function ListForSale() {
   const [artworks, setArtworks] = useState([]);
-  const navigate = useNavigate(); // Initialize navigation function
+  const navigate = useNavigate(); 
 
-  // Load artworks from localStorage
+  
   useEffect(() => {
     const storedArtworks = JSON.parse(localStorage.getItem("artworks")) || [];
     setArtworks(storedArtworks);
   }, []);
 
-  // Function to delete a single artwork
+  
   const handleDeleteArtwork = (index) => {
     const updatedArtworks = artworks.filter((_, i) => i !== index);
     localStorage.setItem("artworks", JSON.stringify(updatedArtworks));
@@ -51,7 +51,7 @@ function ListForSale() {
         )}
       </div>
 
-      {/* Back to Home Button */}
+      
       <button className="home-button" onClick={() => navigate("/homepage")}>Back to Home</button>
     </div>
   );
