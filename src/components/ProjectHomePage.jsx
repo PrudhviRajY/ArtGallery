@@ -70,7 +70,7 @@ handleSignup = async (e) => {
     const { email, password } = this.state;
 
     try {
-        const response = await fetch("http://localhost:8080/api/users/signin", {
+        const response = await fetch("http://localhost:8082/api/users/signin", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, password }),
